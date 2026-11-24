@@ -1,0 +1,1467 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3ECE4;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #F3ECE4;
+}
+
+/* LOGO Y MENU */
+
+header .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+    width: 90px;
+    height: auto;
+    margin-left: -50px;
+
+}
+
+/* MENU DE NAVEGACION */
+
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 25px 40px;
+}
+
+.menu-navegacion a {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    color: #302522;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.menu-navegacion a:hover {
+    color: #A52A2A;
+    text-decoration: none;
+}
+
+/* IMAGEN PRINCIPAL DEL HOME */
+.portada {
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* TITULO PRINCIPAL */
+
+.portada h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #F8F0E8;
+    font-size: 150px;
+    font-weight: bold;
+    text-align: left;
+    max-width: 750px;
+    margin: 0;
+    padding: 0;
+}
+
+/* color de la palabra japón */
+
+/* POSICION DEL TITULO */
+
+.contenedor-portada {
+    position: absolute;
+    left: 4%;
+    top: 44%;
+    transform: translateY(-50%);
+
+    width: 48%;
+    text-align: left;
+}
+
+.contenedor-portada h1 {
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1;
+    margin: 0;
+}
+
+.contenedor-portada h1 span {
+    display: block;
+    white-space: nowrap;
+}
+
+
+.titulo-japon {
+    font-size: 100px;
+    font-weight: 700;
+    color: #F3ECE4;
+}
+
+.titulo-frase {
+    font-size: 110px;
+    font-weight: 700;
+    color: #F3ECE4;
+}
+
+.titulo-tradiciones {
+    font-size: 100px;
+    font-weight: 600;
+    color: #E66A60;
+}
+
+.descripcion-portada {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    color: #F3ECE4;
+    width: 85%;
+    max-width: 440px;
+    margin: 25px 0;
+    text-align: left;
+    line-height: 1.25;
+    position: relative;
+    left: 0;
+}
+
+.boton-portada {
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+    padding: 14px 35px;
+    background-color: #681D29;
+    color: #F3ECE4;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+}
+
+.boton-portada:hover {
+    background-color: #963B45;
+    }
+    
+
+/* SEGUNDA IMAGEN CON DEGRADADO OSCURO */
+
+.portada::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(to right,
+            rgba(20, 8, 8, 0.65) 0%,
+            rgba(20, 8, 8, 0.30) 45%,
+            transparent 80%),
+        url("img/Linternas japonesas resplandecientes.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transition: opacity 2s ease;
+    pointer-events: none;
+}
+
+/*CAMBIO DE IMAGEN AL PASAR EL MOUSE*/
+
+.portada:hover::before {
+    opacity: 1;
+}
+
+/*Logo en la barra y al lado letra*/
+.identidad {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.texto-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nombre-japones {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #302522;
+}
+
+.subtitulo-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: #A52A2A;
+}
+
+/* SECCIÓN DESCUBRIR */
+.Descubrir {
+    background-color: #F3ECE4;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ORGANIZACIÓN CON FLEXBOX */
+
+.contenido-descubrir {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* COLUMNA IZQUIERDA TEXTO */
+
+.texto-descubrir {
+    flex: 1;
+    min-width: 0;
+}
+
+.texto-descubrir h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #302522;
+    margin-bottom: 20px;
+}
+
+.texto-descubrir p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #302522;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN CONOCER MÁS */
+
+.boton-descubrir {
+    display: inline-block;
+    background-color: #681D29;
+    color: #F3ECE4;
+    border: 1px solid #681D29;
+    padding: 12px 30px;
+    margin-top: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boton-descubrir:hover {
+    background-color: #963B45;
+    border-color: #963B45;
+}
+
+/* COLUMNA DERECHA: IMAGEN */
+
+.imagen-descubrir {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* FOTOGRAFÍA */
+
+.imagen-descubrir img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* CAPA ROJA Y TEXTO */
+
+.capa-roja {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 29, 41, 0.65);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.capa-roja h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    color: #F3ECE4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* EFECTO HOVER */
+
+.imagen-descubrir:hover img {
+    transform: scale(1.05);
+}
+
+.imagen-descubrir:hover .capa-roja {
+    opacity: 1;
+}
+
+/* CONTENEDOR DEL TEXTO */
+
+.informacion-kitsune {
+    width: 90%;
+    text-align: center;
+}
+
+/* TEXTO JAPONÉS */
+
+.texto-japones {
+    display: block;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 26px;
+    color: #F3ECE4;
+    margin-bottom: 5px;
+}
+
+/* TÍTULO */
+.informacion-kitsune h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #F3ECE4;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* PARRAFO */
+
+.informacion-kitsune p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: #F3ECE4;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* SECCIÓN FESTIVALES */
+.festivales {
+    background-color: #F3ECE4;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.introduccion-festivales {
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 40px;
+}
+
+.festivales h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    color: #302522;
+    margin: 0 0 15px;
+}
+
+.introduccion-festivales p {
+    font-size: 22px;
+    line-height: 1.4;
+    color: #302522;
+    max-width: 800px;
+    margin: 0 0 14px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
+
+/* ESTRUCTURA DEL CARRUSEL */
+.zona-carrusel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.ventana-carrusel {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.carrusel-festivales {
+    display: flex;
+    width: 200%;
+    transition: transform 0.7s ease;
+}
+
+.grupo-tarjetas {
+    display: flex;
+    width: 50%;
+    flex-shrink: 0;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.tarjeta-festival {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagenes-festival {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.imagenes-festival img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DESPLAZAMIENTO DEL CARRUSEL */
+
+#grupo-1,
+#grupo-2 {
+    display: none;
+}
+
+#grupo-1:checked~.zona-carrusel .carrusel-festivales {
+    transform: translateX(0);
+}
+
+#grupo-2:checked~.zona-carrusel .carrusel-festivales {
+    transform: translateX(-50%);
+}
+
+/* FLECHAS DEL CARRUSEL CON FLOR JAPONESA */
+
+.flecha-anterior,
+.flecha-siguiente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+
+    background: url("img/logo de boton de inicio.png") center / contain no-repeat;
+    background-color: transparent;
+
+    color: #FFF7E8;
+    font-size: 25px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.flecha-anterior:hover,
+.flecha-siguiente:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+/* EFECTO DE CAMBIO DE FOTOGRAFÍA Y ZOOM */
+
+.foto-secundaria {
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 0.5s ease, transform 0.7s ease;
+}
+
+.imagenes-festival:hover .foto-secundaria {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+#Descubrir {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* SECCIÓN CULTURA */
+.cultura {
+    background-color: #681D29;
+    background-image: none;
+    padding: 80px 0;
+    color: #F3ECE4;
+    position: relative;
+    overflow: hidden;
+}
+
+.introduccion-cultura {
+    margin-bottom: 35px;
+}
+
+.introduccion-cultura h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.introduccion-cultura p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* DISTRIBUCIÓN DE LOS BLOQUES */
+.composicion-cultura {
+    display: flex;
+    gap: 25px;
+    height: 650px;
+}
+
+.cultura-izquierda {
+    width: 40%;
+    flex-shrink: 0;
+}
+
+.cultura-derecha {
+    flex: 1;
+    min-width: 0;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cultura-superior {
+    display: flex;
+    width: 100%;
+    height: 312.5px;
+    flex-shrink: 0;
+    gap: 25px;
+}
+
+.cultura-inferior {
+    width: 100%;
+    height: 312.5px;
+    flex-shrink: 0;
+}
+
+/* BLOQUES INTERACTIVOS */
+
+.bloque-cultura {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.bloque-cultura input {
+    display: none;
+}
+
+.imagen-cultura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    transition: opacity 0.6s ease;
+}
+
+.imagen-cultura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-cultura {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    color: #F3ECE4;
+}
+
+.titulo-cultura {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+.descripcion-cultura {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.texto-cultura>span:last-child {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* CAMBIO DE IMÁGENES AL HACER CLIC */
+
+#vestimenta-1:checked~.cultura-foto-1,
+#vestimenta-2:checked~.cultura-foto-2,
+#vestimenta-3:checked~.cultura-foto-3 {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+/* CAMBIO DE IMÁGENES DE GASTRONOMÍA */
+
+#gastronomia-1:checked~.cultura-foto-1,
+#gastronomia-2:checked~.cultura-foto-2,
+#gastronomia-3:checked~.cultura-foto-3 {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+/* CAMBIO DE IMÁGENES DE MÚSICA Y DANZA */
+
+#musica-1:checked~.cultura-foto-1,
+#musica-2:checked~.cultura-foto-2,
+#musica-3:checked~.cultura-foto-3 {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+/* CAMBIO DE IMÁGENES DE RITUALES Y CREENCIAS */
+
+#ritual-1:checked~.cultura-foto-1,
+#ritual-2:checked~.cultura-foto-2,
+#ritual-3:checked~.cultura-foto-3 {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+/* PIE DE PÁGINA */
+
+/* FOOTER CON TRANSICIÓN DIFUMINADA */
+
+.pie-pagina {
+    position: relative;
+    background-color: #302522;
+    color: #F3ECE4;
+    padding: 100px 0 25px;
+}
+
+/* DEGRADADO ENTRE CONTACTO Y FOOTER */
+
+.pie-pagina::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 100%;
+
+    height: 100px;
+
+    background: linear-gradient(to bottom,
+            #F3ECE4 0%,
+            #D0BDB4 35%,
+            #80615B 70%,
+            #302522 100%);
+
+    pointer-events: none;
+}
+
+.contenido-pie {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+
+.columna-pie {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.identidad-pie {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.identidad-pie img {
+    width: 55px;
+    height: auto;
+}
+
+.columna-pie h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+.identidad-pie h3 {
+    margin: 0;
+}
+
+.columna-pie h4 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+.columna-pie p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+.pie-pagina a {
+    color: #F3ECE4;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.pie-pagina a:hover {
+    color: #E7B7B2;
+}
+
+.pie-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #79625B;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.pie-inferior p,
+.pie-inferior a {
+    margin: 0;
+}
+
+/* BOTÓN VOLVER AL INICIO */
+
+.boton-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.boton-arriba img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.boton-arriba span {
+    position: absolute;
+    color: #F3ECE4;
+    font-size: 30px;
+    line-height: 1;
+    font-family: Arial, sans-serif;
+}
+
+.boton-arriba:hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease;
+}
+
+/* ANIMACIÓN DE ENTRADA DE LA PORTADA */
+
+@keyframes aparecer-portada {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titulo-japon,
+.titulo-frase,
+.titulo-tradiciones,
+.descripcion-portada{
+    animation: aparecer-portada 1s ease both;
+}
+
+.titulo-japon {
+    animation-delay: 0.2s;
+}
+
+.titulo-frase {
+    animation-delay: 0.4s;
+}
+
+.titulo-tradiciones {
+    animation-delay: 0.6s;
+}
+
+.descripcion-portada {
+    animation-delay: 0.8s;
+}
+
+.boton-portada {
+    animation: none;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.boton-portada:hover {
+    background-color: transparent;
+    transform: scale(1.08);
+}
+
+/* SECCIÓN EXPERIENCIA Y CONTACTO */
+.contacto {
+    background-color: #F3ECE4;
+    padding: 100px 0;
+    position: relative;
+}
+
+/* INTRODUCCIÓN */
+
+.introduccion-contacto {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.introduccion-contacto h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 55px;
+    color: #681D29;
+    margin-bottom: 20px;
+}
+
+.introduccion-contacto p {
+    color: #302522;
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* VIDEO Y MAPA */
+
+.contenido-contacto {
+    display: flex;
+    gap: 30px;
+}
+
+.bloque-contacto {
+    flex: 1;
+    min-width: 0;
+}
+
+.bloque-contacto h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    color: #681D29;
+    margin-bottom: 20px;
+}
+
+.marco-multimedia {
+    width: 100%;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.marco-multimedia iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* CONTACTO POR CORREO */
+
+.mensaje-contacto {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.mensaje-contacto h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    color: #681D29;
+    margin-bottom: 15px;
+}
+
+.mensaje-contacto p {
+    font-size: 20px;
+    color: #302522;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.boton-contacto {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #681D29;
+    color: #F3ECE4;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.boton-contacto:hover {
+    background-color: #963B45;
+    transform: scale(1.05);
+}
+
+/* BOTONES DE CONTACTO */
+
+.botones-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* PRECIO DE LAS EXPERIENCIAS */
+
+.precio-experiencia {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #681D29;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* BOTÓN DE RESERVA */
+
+.boton-reserva {
+    display: inline-block;
+    background-color: #681D29;
+    color: #F3ECE4;
+    padding: 12px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.boton-reserva:hover {
+    background-color: #963B45;
+    transform: translateY(-3px);
+}
+
+/* VENTANA INFORMATIVA DE FESTIVALES */
+
+.ventana-festival {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 2000;
+}
+
+.ventana-festival:target {
+    display: flex;
+}
+
+.contenido-ventana p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contenido-ventana h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    color: #681D29;
+    margin-bottom: 20px;
+}
+.cerrar-ventana {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    color: #681D29;
+    font-size: 35px;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.cerrar-ventana:hover {
+    color: #963B45;
+}
+
+/* FAROLITOS JAPONESES FLOTANTES */
+
+.farolito {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+    animation: flotar-farolito 4s ease-in-out infinite;
+}
+
+/* FAROLITO SUPERIOR IZQUIERDO */
+.farolito-izquierdo {
+    width: 260px;
+    top: 15px;
+    left: 10px;
+}
+
+
+/* MOVIMIENTO SUAVE */
+
+@keyframes flotar-farolito {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+
+.textura-portada {
+    position: absolute;
+
+    width: 950px;
+    height: auto;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(90deg) scaleX(-1);
+
+    opacity: 0.55;
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* TEXTO Y BOTÓN POR ENCIMA DE LA TEXTURA */
+
+.contenedor-portada {
+    position: relative;
+    z-index: 2;
+}
+
+/* SEPARADOR DE TINTA ENTRE FESTIVALES Y CULTURA */
+
+.separador-tinta {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #681D29;
+}
+
+.separador-tinta img {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: -45px;
+    left: 0;
+    object-fit: fill;
+    pointer-events: none;
+}
+
+/* SEPARADOR ENTRE CULTURA Y CONTACTO */
+
+.separador-tinta-inferior {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #F3ECE4;
+}
+
+.separador-tinta-inferior img {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: -35px;
+    left: 0;
+    object-fit: fill;
+    transform: rotate(180deg);
+    pointer-events: none;
+}
+
+
+.decoracion-contacto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.contacto .contenedor {
+    position: relative;
+    z-index: 2;
+}
+
+.decoracion-descubrir {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.Descubrir .contenedor {
+    position: relative;
+    z-index: 2;
+}
+
+/* DECORACIÓN CENTRADA CON BORDES DIFUMINADOS */
+
+.cultura::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("img/decoracion\ 3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+
+    opacity: 0.35;
+
+    -webkit-mask-image: linear-gradient(to bottom,
+            transparent 0%,
+            black 12%,
+            black 88%,
+            transparent 100%);
+
+    mask-image: linear-gradient(to bottom,
+            transparent 0%,
+            black 12%,
+            black 88%,
+            transparent 100%);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* CONTENIDO POR ENCIMA */
+
+.cultura .contenedor {
+    position: relative;
+    z-index: 2;
+}
+
+.decoracion-sakura {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 750px;
+    max-width: 60%;
+    height: auto;
+
+    opacity: 1;
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* BOTONES JAPONESES */
+
+.boton-portada,
+.boton-descubrir,
+.boton-contacto {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 90px;
+    box-sizing: border-box;
+
+    background-image: url("img/boton 1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    color: #FFF7E8;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.boton-descubrir:hover,
+.boton-contacto:hover {
+    background-color: transparent;
+    box-shadow: none;
+    transform: scale(1.05);
+}
+
+/* DECORACIÓN DEL MENÚ DE NAVEGACIÓN */
+
+.menu-navegacion a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* IMAGEN DECORATIVA */
+
+.menu-navegacion a::after {
+    content: "";
+    position: absolute;
+
+    width: 160%;
+    height: 35px;
+
+    left: 50%;
+    bottom: -12px;
+
+    background-image: url("img/linea de barra.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: translateX(-50%) scaleX(0);
+    opacity: 0;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* APARECE AL PASAR EL MOUSE */
+
+.menu-navegacion a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    opacity: 1;
+}
+
+/* BOTONES DESCUBRIR MÁS DE LOS FESTIVALES */
+.tarjeta-festival>a {
+    display: inline-block;
+    background-color: #681D29;
+    color: #FFF7E8;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: 1px solid #C58A36;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.tarjeta-festival>a:hover {
+    background-color: #963B45;
+    transform: translateY(-3px);
+}
+.contenido-ventana {
+    position: relative;
+    background-color: #F3ECE4;
+    background-image: url("img/Patrón Seigaiha en degradado rojizo.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+
+    width: 90%;
+    max-width: 550px;
+    max-height: 650px;
+    overflow-y: auto;
+
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+    color: #302522;
+    z-index: 1;
+}
+
+.portada {
+    background-image:
+        linear-gradient(to right,
+            rgba(20, 8, 8, 0.65) 0%,
+            rgba(20, 8, 8, 0.30) 45%,
+            transparent 80%),
+        url("img/mujeres con vestido.jpg");
+
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* PALABRAS DESTACADAS DE MATSURI */
+
+.texto-descubrir strong {
+    font-weight: 700;
+}
+
+.texto-descubrir .resaltado-matsuri {
+    color: #A52A2A;
+    font-weight: 700;
+}
+
+.texto-descubrir .texto-subrayado {
+    text-decoration: underline;
+    text-decoration-color: #B85C63;
+    text-underline-offset: 4px;
+    font-weight: 600;
+}
+
+/* TEXTO DESTACADO DE FESTIVALES */
+
+.festivales strong {
+    font-weight: 700;
+    color: #302522;
+}
+
+.festivales .resaltado-festival {
+    color: #A52A2A;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #C58A36;
+    text-underline-offset: 4px;
+}
+
+/* TEXTO DESTACADO DE CULTURA */
+.cultura p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.cultura p strong {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.cultura .resaltado-cultura {
+    color: #F2D49B;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #F2D49B;
+    text-underline-offset: 4px;
+}
+
+/* TEXTO DESTACADO DE CONTACTO */
+.contacto p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.contacto p strong {
+    font-weight: 700;
+    color: #302522;
+}
+
+.contacto .resaltado-contacto {
+    color: #681D29;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #C58A36;
+    text-underline-offset: 4px;
+}
+
